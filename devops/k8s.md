@@ -67,3 +67,8 @@ When you created a `Deployment`, K8s created a Pod to host your application inst
 ```bash
   kubectl proxy --address='0.0.0.0' --accept-hosts='^*$'
 ```
+
+7. References
+- https://github.com/hocchudong/ghichep-kubernetes
+- https://crondev.com/kubernetes-installation-kubeadm/
+- http://kubernetesbyexample.com/nodes/
