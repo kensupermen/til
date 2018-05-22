@@ -14,3 +14,10 @@ If you want width always = 500px(include border and padding), you must use `box-
 2. Khi dung `Float` luon nho can phai `clear float`
 Cach de `clear float` la set thuoc tinh `overflow:auto` cho parrent box
 Cach 2 la tao 1 the div lam diem dung o duoi div co float sau do set thuoc tinh `clear: both`
+
+3. Khi text dai qua su dung `...`
+
+```css
+text-overflow: ellipsis;
+white-space: nowrap;
+```
