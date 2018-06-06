@@ -22,3 +22,16 @@
   Add your code last, libraries and dependencies first. For node.js apps that means adding your package.json first, running npm install and only then adding your code.
 
 ## 6. Docker for production
+
+
+## 7. Docker for dev env
+** Mysql **
+- First, we need create container keep data(remember, that is a container, dont use statement remove all container). I just call data-container
+```bash
+docker create -v /var/lib/mysql --name mysqldata mysql
+```
+- Next, we create container mysql run with volumes created at data-container
+
+```bash
+docker run --name mysqldb1 --volumes-from mysqldata -e MYSQL_ROOT_PASSWORD=password -p 3307:3306 mysql
+```
